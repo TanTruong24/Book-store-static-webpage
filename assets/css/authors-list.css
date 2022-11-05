@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  background-color: white;
+  display: block;
+  overflow: auto;
+  padding-left: 50px;
+}
+.main__card {
+  display: block;
+  overflow: auto;
+}
+.main__card .row__author {
+  margin-left: 40px;
+  width: 200px;
+  padding-top: 15px;
+  float: left;
+}
+.main__card .row__author .author-image img {
+  margin-left: 24px;
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+}
+.main__card .row__author .author-info__name {
+  text-align: center;
+  font-weight: bold;
+}
+.main__card .row__author .author-info__published {
+  text-align: center;
+  color: #adadad;
+}
+.fa-angle-right {
+  padding-top: 5px;
+  font-size: 30px;
+}
+.load-more {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+  width: 50%;
+}
+.load-more button {
+  padding: 10px 40px;
+  font-size: 18px;
+  border: 1px solid #333;
+  background-color: white;
+}
+.load-more button:hover {
+  background-color: #2b9348;
+  color: white;
+}

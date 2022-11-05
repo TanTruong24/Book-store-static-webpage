@@ -1,0 +1,207 @@
+/*main*/
+/*col left*/
+/* Fixed sidenav, full height */
+nav {
+  float: left;
+  height: 100%;
+  width: 270px;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  margin: 15px 15px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav__item {
+  padding: 15px 10px;
+  border: 1px solid rgb(235, 235, 235);
+}
+.sidenav__item:hover {
+  border: 1px solid #2b9348;
+}
+.sidenav__item a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  color: black;
+}
+.sidenav__item .blog a {
+  color: white !important;
+}
+.sidenav__item .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+}
+/* On mouse-over */
+.sidenav__item .dropdown-container a:hover,
+.col-right a:hover {
+  color: #2b9348;
+  font-weight: bold;
+}
+.sidenav__item .dropdown-container .post {
+  display: block;
+  overflow: auto;
+  margin-left: 10px;
+  border: 1px solid #f2f2f2;
+  padding: 3px;
+}
+.sidenav__item .dropdown-container .post .left {
+  float: left;
+}
+.sidenav__item .dropdown-container .post .title {
+  font-weight: bold;
+  width: 85%;
+  font-size: 15px;
+}
+.sidenav__item .dropdown-container .post .date {
+  text-align: left;
+  font-size: 13px;
+  color: gray;
+  font-weight: lighter;
+}
+.sidenav__item .dropdown-container .post img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+.sidenav__item .dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+.sidenav__item .dropdown-container button {
+  padding: 2px 3px;
+  border: none;
+  outline: none;
+  background-color: #2b9348;
+  margin: 3px 1px;
+}
+/* Optional: Style the caret down icon */
+.sidenav__item .fa-plus {
+  float: right;
+  padding-right: 8px;
+  font-weight: lighter;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*checkbox language*/
+.sidenav__item .dropdown-container .box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.sidenav__item .dropdown-container .box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+/* Create a custom checkbox */
+.sidenav__item .dropdown-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f2f2f2;
+}
+
+/* On mouse-over, add a grey background color */
+.sidenav__item .dropdown-container .box:hover input ~ .checkmark {
+  background-color: #2b9348;
+}
+
+/* When the checkbox is checked, add a blue background */
+.sidenav__item .dropdown-container .box input:checked ~ .checkmark {
+  background-color: #2b9348;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.sidenav__item .dropdown-container .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.sidenav__item .dropdown-container .box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.sidenav__item .dropdown-container .box .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*input search author*/
+.sidenav__item .dropdown-container .input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.sidenav__item .dropdown-container .input-container .icon {
+  padding: 5px;
+  padding-top: 8px;
+  background: #333;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.sidenav__item .dropdown-container .input-container .search-author {
+  width: 150px;
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+}
+
+.sidenav__item .dropdown-container .input-container .search-author:focus {
+  border: 2px solid #333;
+}

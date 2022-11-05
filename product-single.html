@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AthenaBook - Nhà Giả Kim</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/images/logo/logo-icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/header-footer.css" />
+    <link rel="stylesheet" href="assets/css/product-single.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/snowfall.css" />
+  </head>
+  <body class="background">
+    <header>
+      <div class="top-header">
+        <div class="left">
+          <span
+            ><i class="fa fa-question-circle-o"></i> Bạn có cần trợ giúp
+            không?</span
+          >
+          <span><i class="fa fa-mobile-phone"></i> 0346114846</span>
+        </div>
+        <div class="right">
+          <span><i class="fa fa-user-o"></i></span>
+          <span><i class="fa fa-shopping-basket"></i></span>
+          <span><i class="fa fa-heart-o"></i></span>
+        </div>
+      </div>
+      <hr class="hr-gray" />
+      <div class="bottom-header">
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/logo/logo.gif" alt="" /></a>
+        </div>
+        <div class="bottom-header_right">
+          <div class="topnav" id="responsive-topnav">
+            <div class="nav">
+              <a href="index.html">TRANG CHỦ</a>
+              <a href="shop.html" class="active-shop">CỬA HÀNG</a>
+              <a href="blog.html">BLOG</a>
+              <a href="authors-list.html">TÁC GIẢ</a>
+            </div>
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="ResponsiveTopnav()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="search-container">
+            <form>
+              <input type="text" placeholder="Nhập từ khóa..." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="product">
+        <div class="product__payment">
+          <div class="col-left">
+            <img src="assets/images/book/180x200/vtp-so-do.jpg" alt="" />
+          </div>
+          <div class="col-right">
+            <div class="title">
+              <h1>Số Đỏ</h1>
+            </div>
+            <ul class="rate">
+              <li class="rate__star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li class="many__rate">(1,234)</li>
+              <li class="rate__author">Tác giả: <span>Vũ Trọng Phụng</span></li>
+            </ul>
+            <div class="cost"><p>30.000 - 56.000 vnđ</p></div>
+            <div class="format">
+              <p>Định dạng: <span>Chọn một lựa chọn</span></p>
+              <div class="format__choose">
+                <div class="option" tabindex="1">
+                  Bìa Cứng <br />
+                  56.000đ
+                </div>
+                <div class="option" tabindex="2">
+                  Bìa mềm <br />
+                  42.000đ
+                </div>
+                <div class="option" tabindex="3">
+                  Kindle <br />
+                  30.000đ
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+              <p>
+                “Các ông muốn tiểu thuyết cứ là tiểu thuyết. Tôi và các nhà văn cùng chí hướng như tôi, muốn tiểu thuyết thực sự là ở đời… Các ông muốn theo tiểu thuyết tuỳ thời, chỉ nói cái gì thiên hạ thích nghe nhất là sự giả dối. Chúng tôi chỉ muốn nói cái gì cũng đúng sự thực.” (Vũ Trọng Phụng, Báo Tương Lai, 25/03/1937).
+              </p>
+            </div>
+            <div class="add">
+              <div class="add__quantily">
+                <button onclick="decrement()">&minus;</button>
+                <input
+                  id="quantilyBooks"
+                  type="number"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button onclick="increment()">&plus;</button>
+              </div>
+              <div class="add__btn">
+                <button>Thêm vào giỏi hàng</button>
+              </div>
+            </div>
+            <hr />
+            <div class="action">
+              <div class="wishlist">
+                <i class="fa fa-heart-o"></i> Thêm yêu thích
+              </div>
+              <div class="share"><i class="fa fa-share-square-o"></i> Chia sẻ</div>
+            </div>
+          </div>
+        </div>
+        <div class="product__info">
+          <div class="intro">
+            <a class="action" href="#idDesciption">Mô tả</a>
+            <a href="#idDetails">Chi tiết</a>
+            <a href="#my-video">Video</a>
+            <a href="#idReview">Reviews</a>
+          </div>
+          <hr />
+          <div id="idDesciption" class="desciption">
+            <p>
+              Việt Nam Danh Tác - Số Đỏ
+              <br><br>
+              Văn học Việt Nam thời xưa có nhiều tác phẩm có giá trị to lớn về mặt nhân văn và nghệ thuật, đã được công nhận và chứng thực qua thời gian. Bộ sách Việt Nam danh tác bao gồm loạt tác phẩm đi cùng năm tháng như: Số đỏ (Vũ Trọng Phụng), Việc làng (Ngô Tất Tố), Gió đầu mùa, Hà Nội băm sáu phố phường (Thạch Lam), Miếng ngon Hà Nội (Vũ Bằng), Vang bóng một thời (Nguyễn Tuân). Hy vọng bộ sách sau khi tái bản sẽ giúp đông đảo tầng lớp độc giả thêm hiểu, tự hào và nâng niu kho tàng văn học nước nhà.
+              <br><br>
+              Đoạn trích 
+              <br>
+              "ốn lấy cái người ấy, vì nếu tôi lấy hắn, chắc hắn sẽ mọc sừng. Thí dụ một người như ông mà hỏi tôi thì còn nói gì! Đằng này hắn lại nhà quê, không biết yêu vợ như những người văn minh. Buồn lắm anh ạ.
+              <br> - Tôi phải làm gì?- Phải giả vờ chim tô, chúng ta giả vờ chim nhau, mê Cho hắn bỏ tôi, mình hiểu chưa? Ta giả vờ với nhau thôi mà! Tôi cần mang tiếng hư hỏng lắm mới được.
+              <br> - Thế sao nữa ạ?
+              <br> - Anh thì anh cũng phải mang tiếng là làm hại một đời tôi mới xong!”
+            </p>
+          </div>
+          <hr />
+          <div class="intro">
+            <a href="#idDesciption">Mô tả</a>
+            <a class="action" href="#idDetails">Chi tiết</a>
+            <a href="#my-video">Video</a>
+            <a href="#idReview">Reviews</a>
+          </div>
+          <hr />
+          <div id="idDetails" class="details">
+            <table class="details__table">
+              <tr>
+                <td class="bold">Định dạng:</td>
+                <td>Bìa mềm | 224 trang</td>
+              </tr>
+              <tr>
+                <td class="bold">Kích thước:</td>
+                <td>13 x 19 cm | 301g</td>
+              </tr>
+              <tr>
+                <td class="bold">Ngày xuất bản:</td>
+                <td>10/12/2021</td>
+              </tr>
+              <tr>
+                <td class="bold">Nhà xuất bản:</td>
+                <td>Nhã Nam</td>
+              </tr>
+              <tr>
+                <td class="bold">Thành phố/Quốc gia xuất bản:</td>
+                <td>TP. Hồ Chí Minh, Việt Nam</td>
+              </tr>
+              <tr>
+                <td class="bold">Ngôn ngữ:</td>
+                <td>Tiếng Việt</td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+          <div class="intro">
+            <a href="#idDesciption">Mô tả</a>
+            <a href="#idDetails">Chi tiết</a>
+            <a class="action" href="#my-video">Video</a>
+            <a href="#idReview">Reviews</a>
+          </div>
+          <hr />
+          <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            width="640"
+            height="400"
+            poster="assets/videos/poster.jpg"
+            data-setup="{}"
+          >
+            <source src="assets/videos/video1.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+          <hr />
+          <div class="intro">
+            <a href="#idDesciption">Mô tả</a>
+            <a href="#idDetails">Chi tiết</a>
+            <a href="#my-video">Video</a>
+            <a class="action" href="#idReview">Reviews</a>
+          </di>
+          <hr />
+          <div id="idReview" class="review">
+              <div class="review__rate">
+                <h3>Phản hồi Khách hàng</h3>
+                  <div class="left">
+                    <div class="left__above">
+                      <div class="above__left">4.6</div>
+                      <div class="above__right">
+                        <span>3,147 Đánh giá</span> <br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="left__bottom">
+                      <button class="all">Tất cả Nhận xét</button>
+                      <button class="write">Viết Nhận xét</button>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <table>
+                      <tr>
+                        <td>5 sao</td>
+                        <td class="star">
+                          <div class="container">
+                            <div class="five-star"></div>
+                          </div>
+                        </td>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <td>4 sao</td>
+                        <td class="star">
+                          <div class="container">
+                            <div class="four-star"></div>
+                          </div>
+                        </td>
+                        <td>410</td>
+                      </tr>
+                      <tr>
+                        <td>3 sao</td>
+                        <td class="star">
+                          <div class="container">
+                            <div class="three-star"></div>
+                          </div>
+                        </td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>2 sao</td>
+                        <td class="star">
+                          <div class="container">
+                            <div class="two-star"></div>
+                          </div>
+                        </td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>1 sao</td>
+                        <td class="star">
+                          <div class="container">
+                            <div class="one-star"></div>
+                          </div>
+                        </td>
+                        <td>0</td>
+                      </tr>
+                    </table>
+                    
+                  </div>
+              </div>
+              <div class="review__see">
+                <h3>1-5 trong 55 Nhận xét</h3>
+                <div class="cmt">
+                  <div class="cmt__title">
+                    <span class="title">Cực kỳ hài lòng</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="cmt__content">
+                    <p>Giao hàng nhanh, đóng gói cẩn thận. Hình thức: Chất giấy tốt, in rõ ràng, bìa đẹp + thêm 1 book mark cũng đẹp. Mình cực kỳ đánh giá cao những quyển sách có book mark đi kèm. Nội dung: Quyển này thì quá nổi tiếng của Vũ Trọng Phụng rồi, nên mình không nhận xét nhiều. Thể loại văn học trào phúng, có những cái nghịch lý trong cái xã hội "tân thời" tạo nên tiếng cười châm biếm. Đáng để đọc nha
+                    </p>
+                    <div class="images">
+                      <div class="mul">
+                        <img src="assets/images/book/170x170/cmt1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cmt__date">
+                    <p>Trương Nguyễn Anh Thư, 10 tháng 11 năm 2021</p>
+                  </div>
+                  <div class="cmt__vote">
+                    <span><i class="fa fa-thumbs-o-up"></i> 90</span>
+                    <span><i class="fa fa-thumbs-o-down"></i> 9</span>
+                    <span><i class="fa fa-flag-o"></i></span>
+                  </div>
+                  <hr />
+                </div>
+                <div class="cmt">
+                  <div class="cmt__title">
+                    <span class="title">Cực kỳ hài lòng</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="cmt__content">
+                    <p>sách đẹp. nội dung đọc rất cuốn. giọng văn phê phán lối sống nửa mùa, không ra đâu vào đâu của tầng lớp thượng lưu VN thời Pháp thuộc. Sự lươn lẹo và một chút tinh quái đã giúp Xuân tóc đỏ từ một thằng nhặt bóng trở thành một đốc tờ, một anh hùng cứu quốc
+                    </p>
+                    <div class="images">
+                      <div class="mul">
+                        <img src="assets/images/book/170x170/cmt2.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cmt__date">
+                    <p>Trương Thế Tấn, 10 tháng 11 năm 2021</p>
+                  </div>
+                  <div class="cmt__vote">
+                    <span><i class="fa fa-thumbs-o-up"></i> 90</span>
+                    <span><i class="fa fa-thumbs-o-down"></i> 9</span>
+                    <span><i class="fa fa-flag-o"></i></span>
+                  </div>
+                  <hr />
+                </div>
+                <div class="cmt">
+                  <div class="cmt__title">
+                    <span class="title">Cực kỳ hài lòng</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="cmt__content">
+                    <p>Câu chuyện trào phúng rất hay. Một trăm năm trước và một trăm năm sau những hành vi lố lăng, văn hoá xâm thực đã và đang ảnh hưởng tới những người VN. Chúng ta cần phải tỉnh táo, bảo vệ truyền thống của người Việt Nam.
+                    </p>
+                    <div class="images">
+                      <div class="mul">
+                        <img src="assets/images/book/170x170/cmt3.jpg" alt="">
+                      </div>
+                      <div class="mul">
+                        <img src="assets/images/book/170x170/cmt4.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cmt__date">
+                    <p>Trương Thế Tấn, 10 tháng 11 năm 2021</p>
+                  </div>
+                  <div class="cmt__vote">
+                    <span><i class="fa fa-thumbs-o-up"></i> 90</span>
+                    <span><i class="fa fa-thumbs-o-down"></i> 9</span>
+                    <span><i class="fa fa-flag-o"></i></span>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+              <div class="review__write">
+                <h3>Viết Nhận xét</h3>
+                <span class="pr-20">Xếp hạng (bắt buộc)</span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <form>
+                  <label for="ftitle">Thêm tiêu đề</label>
+                  <input type="text" id="ftitle" name="ftitle">
+                  <label for="lsubject">Thông tin chi tiết xin vui lòng! Đánh giá của bạn giúp ích cho những người mua sắm khác.</label>
+                  <textarea id="subject" name="subject" placeholder="Viết nhận xét.."></textarea>
+                </form>
+                <button class="submit">Gửi nhận xét</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="suggest">
+        <div class="main__card">
+          <div class="head">
+            <h2 class="head__title">Gợi ý cho Bạn</h2>
+          </div>
+          <div class="row">
+            <div class="row__product">
+              <div class="book-image">
+                <a href="product-single.html"
+                  ><img src="assets/images/book/180x200/bo-gia.jpg" alt=""
+                /></a>
+              </div>
+              <div class="book-info">
+                <p class="book-info__format">PAPERBACK</p>
+                <div class="book-info__name">
+                  <a href="product-single.html" class="link-none"
+                    >Bố Già</a
+                  >
+                </div>
+                <p class="book-info__author"><a href="authors-single.html" class="link-none-author">Mario Puzo</a></p>
+              </div>
+              <div class="book-add">
+                <div class="book-add_add">
+                  <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                </div>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+            <div class="row__product">
+              <div class="book-image">
+                <a href="product-single.html" class="link-none">
+                  <img src="assets/images/book/180x200/vtp-trung-so-doc-dac.png" alt="" />
+                </a>
+                
+              </div>
+              <div class="book-info">
+                <p class="book-info__format">PAPERBACK</p>
+                <div class="book-info__name"><a href="product-single.html" class="link-none">Trúng số độc đắc</a></div>
+                <p class="book-info__author"><a href="authors-single.html" class="link-none-author">Vũ Trọng Phụng</a></p>
+              </div>
+              <div class="book-add">
+                <div class="book-add_add">
+                  <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                </div>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+            <div class="row__product">
+              <div class="book-image">
+                <a href="product-single.html" class="link-none">
+                  <img src="assets/images/book/180x200/su-im-lang-cua-bay-cu.jpg" alt="" />
+                </a>
+                
+              </div>
+              <div class="book-info">
+                <p class="book-info__format">PAPERBACK</p>
+                <div class="book-info__name"><a href="product-single.html" class="link-none">Sự Im lặng của bầy cừu</a></div>
+                <p class="book-info__author"><a href="authors-single.html" class="link-none-author">Thomas Harris</a></p>
+              </div>
+              <div class="book-add">
+                <div class="book-add_add">
+                  <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                </div>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+            <div class="row__product">
+              <div class="book-image">
+                <a href="product-single.html" class="link-none">
+                  <img src="assets/images/book/180x200/sach-nhung-nguoi-khon-kho.jpg" alt="" />
+                </a>
+                
+              </div>
+              <div class="book-info">
+                <p class="book-info__format">PAPERBACK</p>
+                <div class="book-info__name"><a href="product-single.html" class="link-none">Những người khốn khổ</a></div>
+                <p class="book-info__author"><a href="authors-single.html" class="link-none-author">Victo Hugo</a></p>
+              </div>
+              <div class="book-add">
+                <div class="book-add_add">
+                  <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                </div>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+            <div class="row__product">
+              <div class="book-image">
+                <a href="product-single.html" class="link-none">
+                  <img src="assets/images/book/180x200/dai-gia-gatsby.jfif" alt="" />
+                </a>
+                
+              </div>
+              <div class="book-info">
+                <p class="book-info__format">PAPERBACK</p>
+                <div class="book-info__name"><a href="product-single.html" class="link-none">Đại gia Gatsby</a></div>
+                <p class="book-info__author"><a href="authors-single.html" class="link-none-author">F. Scott Fitzgerald</a></p>
+              </div>
+              <div class="book-add">
+                <div class="book-add_add">
+                  <a href="#"><i class="fa fa-shopping-basket"></i> </a>
+                </div>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hr-gray" />
+    </section>
+
+    <footer>
+      <!-- Join Our Newsletter -->
+      <div class="join-newsletter">
+        <h2>Tham Gia Để Nhận Thông Tin Mới Nhất</h2>
+        <p>
+          Đăng ký để là người đầu tiên nghe về các sản phẩm mới, ưu đãi đặc
+          biệt và các bộ sưu tập sắp ra mắt
+        </p>
+        <form>
+          <input
+            type="email"
+            id="fmail"
+            name="mail"
+            placeholder="Nhập email để nhập bản tin mỗi tuần"
+          />
+          <input class="submit" type="submit" value="Đăng ký" />
+        </form>
+      </div>
+      <div class="footer__info">
+        <div class="col-left">
+          <h3>Về Chúng Tôi</h3>
+          <hr />
+          <p>
+            AthenaBooks - website cửa hàng sách online. Là sản phẩm của sinh
+            viên Trương Thế Tấn - 19522180, sinh viên khoa Khoa học Máy tính,
+            trường ĐH Công nghệ Thông tin - ĐHQG HCM thực hiện. AthenaBooks là
+            sản phẩm đồ án cuối kỳ lớp IE104.M11 - Internet và Công nghệ Web với
+            hai giảng viên lý thuyết và thực hành là cô Nguyễn Thị Hồng Yến và
+            thầy Phạm Thế Sơn hướng dẫn thực hiện.
+          </p>
+          <ul class="social-icon">
+            <li>
+              <a href="https://www.facebook.com/the.tan.92/" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-center">
+          <h3>Trang</h3>
+          <hr />
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Tác giả</a></li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <h3>Thông Tin Liên Hệ</h3>
+          <hr />
+          <ul>
+            <li>
+              <i class="fa fa-map-marker"></i>Khu phố 6, phường Linh Trung,
+              TP.Thủ Đức, TP. Hồ Chí Minh
+            </li>
+            <li><i class="fa fa-phone"></i> 0346114846</li>
+            <li><i class="fa fa-envelope"></i>19522180@gm.uit.edu.vn</li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2311711961897!2d106.80086541417239!3d10.870014160433072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiDEkEhRRyBUUC5IQ00!5e0!3m2!1svi!2s!4v1640005028610!5m2!1svi!2s"
+            width="500"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <snowfall>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/snowflake.png" />️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/mistletoe.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+      <snowflake><img src="assets/images/falling-affect/christmas-bell.png">️</snowflake>
+    </snowfall>
+    <script src="assets/js/index.js"></script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  </body>
+</html>

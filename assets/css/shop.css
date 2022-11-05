@@ -1,0 +1,176 @@
+/*bestselling book*/
+.link-none {
+  text-decoration: none;
+  color: #333;
+}
+.link-none:hover {
+  color: black;
+}
+.link-none-author {
+  text-decoration: none;
+  color: gray;
+}
+.link-bt-none {
+  color: black;
+  text-decoration: none;
+}
+.link-bt-none:hover {
+  color: white;
+}
+section {
+  display: block;
+  overflow: auto;
+  background-color: white;
+}
+section .col-right {
+  display: block;
+  overflow: auto;
+  background-color: white;
+}
+.main__card {
+  display: block;
+  overflow: auto;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.main__card .row {
+  display: block;
+  overflow: auto;
+  margin-left: 12px;
+  clear: both;
+}
+.main__card .head {
+  display: block;
+  overflow: auto;
+  margin: 15px;
+  margin-top: 0px !important;
+}
+.main__card .head__view-more {
+  margin-right: 15px;
+  font-weight: lighter;
+  font-size: 18px;
+  float: right;
+}
+.main__card .head__view-more a {
+  text-decoration: none;
+  color: black;
+}
+.main__card .head__title {
+  margin-left: 10px;
+  float: left;
+}
+/*sản phẩm mỗi hàng*/
+.main__card .row__product {
+  width: 240px;
+  background-color: white;
+  float: left;
+  border: 1px solid rgb(235, 235, 235);
+}
+.main__card .row__product:hover {
+  background-color: #f0fff1;
+}
+.main__card .row__product .book-image {
+  margin-top: 15px;
+  margin-left: 62px;
+}
+.main__card .row__product .book-image img {
+  max-width: 180px;
+  height: 200px;
+}
+.main__card .row__product .book-info,
+.main__card .row__product .book-add {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-info__format {
+  font-size: 12px;
+  color: #2b9348;
+}
+.main__card .row__product .book-info__name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.main__card .row__product .book-info__author {
+  font-size: 12px;
+  color: gray;
+}
+.main__card .row__product .fa-shopping-basket {
+  float: left;
+  color: #2b9348;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-add a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+}
+.main__card .row__product .book-add .fa-heart-o {
+  float: right;
+  margin-right: 30px;
+  color: #2b9348;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-add a:hover {
+  color: #2b9348;
+}
+.main__card .row__product .book-add i:hover {
+  background-color: #2b9348;
+  color: white;
+}
+/*filter*/
+.main__card .head__left {
+  float: left;
+}
+.main__card .head__right {
+  display: block;
+  overflow: auto;
+  float: right;
+  margin-right: 15px;
+}
+.display .active-display {
+  color: black;
+}
+.main__card .head__right .display,
+.main__card .head__right .display__list,
+.main__card .head__right .display__gallery {
+  float: right;
+}
+.main__card .head__right .display__list,
+.main__card .head__right .display__gallery {
+  border: 1px solid #ddd;
+  padding: 6px;
+  color: #adadad;
+}
+.main__card .head__right .display__list .fa-list,
+.main__card .head__right .display__gallery .fa-th {
+  font-size: 25px;
+}
+.main__card .head__right .filter-sort {
+  padding: 10px;
+  width: 180px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+/*next page*/
+section .col-right .next-page {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section .col-right .next-page .page {
+  font-size: 15px;
+  padding: 10px 15px;
+  margin: 3px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+section .col-right .next-page .page:hover {
+  background-color: #2b9348;
+  color: white !important;
+}

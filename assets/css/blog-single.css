@@ -1,0 +1,273 @@
+section {
+  background-color: white;
+}
+section .content {
+  display: block;
+  overflow: auto;
+}
+section .content__banner {
+  margin: auto;
+  width: 60%;
+  padding-top: 20px;
+}
+section .text {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  display: block;
+  overflow: auto;
+  line-height: 1.6;
+}
+section .text__head .info {
+  font-size: 15px;
+  color: gray;
+  margin-left: 0px;
+}
+section .text__head .name {
+  font-weight: bold;
+}
+section .text__head .date,
+section .text__head .cmt {
+  margin-left: 20px;
+}
+section .text__bottom {
+  text-align: justify;
+  margin-top: 40px;
+}
+section .text__bottom .first-par {
+  font-weight: bold;
+}
+section .text__bottom .images {
+  margin: auto;
+  width: 60%;
+}
+section .text__bottom img {
+  width: 100%;
+}
+section .content__banner img {
+  width: 100%;
+  max-width: 900px;
+  max-height: 600px;
+}
+/*người viết*/
+section .info {
+  margin: auto;
+  width: 60%;
+  display: block;
+  overflow: auto;
+  margin-top: 20px;
+}
+section .info__social {
+  display: block;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+section .info__social .left {
+  padding-top: 12px;
+  float: left;
+}
+section .info__social .left span {
+  font-size: 22px;
+  font-weight: bold;
+}
+section .info__social .right {
+  float: right;
+}
+section .info__social .right button {
+  padding: 15px 25px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+section .info__social .right .facebook {
+  background-color: #1877f2;
+}
+section .info__social .right .twitter {
+  background-color: #1da1f2;
+}
+section .info__social .right .pinterest {
+  background-color: #bd081c;
+}
+section .info__intro {
+  display: block;
+  overflow: auto;
+  background-color: #f2f2f2;
+  clear: both;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+section .info__intro .avatar {
+  float: left;
+  margin: 30px;
+}
+section .info__intro .avatar img {
+  width: 130px;
+  height: 130px;
+}
+section .info__intro .intro {
+  padding-top: 10px;
+}
+section .info__intro .intro .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+section .info__intro .icon-social {
+  margin-top: 15px;
+}
+section .info__intro .icon-social span {
+  margin-right: 30px;
+  font-size: 18px;
+}
+section .suggest {
+  width: 60%;
+  margin: auto;
+  display: block;
+  overflow: auto;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+section .suggest__left {
+  display: block;
+  overflow: auto;
+  float: left;
+  width: 360px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+section .suggest__right {
+  display: block;
+  overflow: auto;
+  float: left;
+  width: 360px;
+}
+section .suggest .tag {
+  color: #2b9348;
+}
+section .suggest .date {
+  margin-top: 15px;
+}
+section .suggest .date span {
+  color: gray;
+  font-size: 15px;
+  margin-right: 20px;
+}
+section .suggest .picture {
+  width: 100%;
+}
+section .suggest .picture img {
+  height: 280px;
+  width: 340px;
+}
+
+/*comment*/
+section .comment {
+  width: 60%;
+  margin: auto;
+  display: block;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+.comment .review__see {
+  clear: both;
+  display: block;
+  overflow: auto;
+  margin-top: 30px;
+}
+.comment .review__see hr {
+  border: 1px solid #f2f2f2;
+}
+.comment .review__see .cmt {
+  display: block;
+  overflow: auto;
+  text-align: left;
+  margin-top: 20px;
+}
+.comment .review__see .cmt__title .title,
+.review__write .title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.comment .review__see .cmt__title .fa-star {
+  color: gray;
+}
+.comment .review__see .cmt__title .checked,
+.fa-star-o {
+  color: orange;
+}
+.comment .review__see .cmt__content {
+  line-height: 1.4;
+  font-size: 15px;
+}
+.comment .review__see .cmt__content .mul {
+  float: left;
+  margin-right: 5px;
+}
+.comment .review__see .cmt__content img {
+  width: 130px;
+  height: 170px;
+}
+.comment .review__see .cmt__date {
+  clear: both;
+  color: gray;
+  font-size: 14px;
+}
+.comment .review__see .cmt__vote {
+  margin-bottom: 10px;
+}
+.comment .review__see .cmt__vote span {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.comment .review__write {
+  text-align: left;
+}
+.comment .review__write form {
+  margin-top: 20px;
+}
+.comment .review__write input[type='text'],
+textarea {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.comment .review__write textarea {
+  width: 100%;
+  height: 150px;
+}
+.comment .review__write .submit {
+  padding: 15px 25px;
+  border: 1px solid #333;
+  outline: none;
+  font-size: 15px;
+  background-color: white;
+}
+.comment .review__write .submit:hover {
+  background-color: #2b9348;
+  color: white;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.load-more {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+  width: 50%;
+}
+.load-more button {
+  padding: 10px 40px;
+  font-size: 18px;
+  border: 1px solid #2b9348;
+  background-color: white;
+}
+.load-more button:hover {
+  background-color: #2b9348;
+  color: white;
+}

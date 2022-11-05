@@ -1,0 +1,98 @@
+/*next page*/
+section .col-right .next-page {
+  clear: both;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section .col-right .next-page .page {
+  font-size: 15px;
+  padding: 10px 15px;
+  margin: 3px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+section .col-right .next-page .page:hover {
+  background-color: #2b9348;
+  color: white;
+}
+
+/*trang chính blog theo dạng list*/
+section {
+  display: block;
+  overflow: auto;
+  background-color: white;
+}
+/* section .col-right {
+  margin-left: 290px;
+} */
+section .col-right .row {
+  display: block;
+  overflow: auto;
+  border: 1px solid #f2f2f2;
+  margin: 15px;
+}
+section .col-right .row__left {
+  float: left;
+  margin: 15px;
+}
+section .col-right .row__left img {
+  width: 230px;
+  height: 230px;
+}
+section .col-right .row__right {
+  float: left;
+  margin-left: 15px;
+  width: 65%;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+section .col-right .row__right .tag {
+  color: #2b9348;
+}
+section .col-right .row__right .title {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0px;
+}
+section .col-right .row__right .title:hover {
+  color: #2b9348;
+}
+section .col-right .row__right .summary {
+  color: gray;
+  padding-bottom: 10px;
+  max-height: 100px;
+}
+section .col-right .row__right .info {
+  color: gray;
+  font-size: 15px;
+}
+section .col-right .row__right .info span {
+  margin-right: 20px;
+}
+section .col-right .row__right .info .name {
+  font-weight: bold;
+}
+section .col-right .row__right a {
+  text-decoration: none;
+  color: black;
+}
+section .col-right .row__right a:hover {
+  color: #2b9348;
+}
+.link-none {
+  text-decoration: none;
+  color: black;
+}
+.link-none-author {
+  text-decoration: none;
+  color: gray;
+}
+.link-bt-none {
+  color: black;
+  text-decoration: none;
+}
+.link-bt-none:hover {
+  color: white !important;
+  font-weight: lighter !important;
+}

@@ -1,0 +1,146 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  display: block;
+  overflow: auto;
+}
+.main__book {
+  margin: 0px 20px;
+}
+.main__card {
+  display: block;
+  overflow: auto;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.main__card .row {
+  display: block;
+  overflow: auto;
+  margin-left: 12px;
+  clear: both;
+  padding-left: 13px;
+}
+.main__card .head {
+  display: block;
+  overflow: auto;
+}
+.link-none-author {
+  text-decoration: none;
+  color: gray;
+}
+.main__card .head__view-more {
+  margin-right: 15px;
+  font-weight: lighter;
+  font-size: 18px;
+  float: right;
+}
+.main__card .head__view-more a {
+  text-decoration: none;
+  color: black;
+}
+.main__card .head__title {
+  margin-left: 10px;
+  float: left;
+}
+/*sản phẩm mỗi hàng*/
+.main__card .row__product {
+  width: 250px;
+  background-color: white;
+  float: left;
+  border: 1px solid rgb(235, 235, 235);
+}
+.main__card .row__product:hover {
+  background-color: #f0fff1;
+}
+.main__card .row__product .book-image {
+  margin-top: 15px;
+  margin-left: 62px;
+}
+.main__card .row__product .book-image img {
+  max-width: 180px;
+  max-height: 200px;
+}
+.main__card .row__product .book-info,
+.main__card .row__product .book-add {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-info__format {
+  font-size: 12px;
+  color: #2b9348;
+}
+.main__card .row__product .book-info__name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333 !important;
+}
+.main__card .row__product .book-info__author {
+  font-size: 12px;
+  color: gray;
+}
+.main__card .row__product .fa-shopping-basket {
+  float: left;
+  color: #2b9348;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-add a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+}
+.main__card .row__product .book-add .fa-heart-o {
+  float: right;
+  margin-right: 30px;
+  color: #2b9348;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.main__card .row__product .book-add a:hover {
+  color: #2b9348;
+}
+.main__card .row__product .book-add i:hover {
+  background-color: #2b9348;
+  color: white;
+}
+.main__intro {
+  background-color: #f2f2f2;
+  display: block;
+  overflow: auto;
+  margin: 20px;
+  margin-top: 0px !important;
+}
+.main__intro .left {
+  float: left;
+  margin: 20px;
+  width: 400px;
+}
+.main__intro .left img {
+  max-width: 380px;
+  max-height: 400px;
+}
+.main__intro .right {
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.main__intro .right__above p {
+  text-align: justify;
+}
+.main__intro .right .tag {
+  text-transform: uppercase;
+  color: #2b9348;
+}
+.main__intro .right__bottom .main__card {
+  background-color: #f2f2f2;
+}
+.main__intro .right__bottom .main__card .row__product {
+  border: none;
+  margin-right: 10px;
+}
